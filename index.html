@@ -224,7 +224,8 @@
 
 <!-- ───────────────────── СКРИПТЫ ───────────────────── -->
 <script>
-lucide.createIcons();
+document.addEventListener('DOMContentLoaded', () => {
+  lucide.createIcons();
 
 // Копирование промокода
 const copyBtn = document.getElementById('copyBtn');
@@ -251,6 +252,7 @@ document.querySelectorAll('.faq-toggle').forEach(btn => {
     const expanded = content.classList.toggle('hidden') === false;
     icon.style.transform = expanded ? 'rotate(180deg)' : 'rotate(0deg)';
   });
+});
 });
 </script>
 
