@@ -197,7 +197,7 @@
   </section>
 
   <!-- DISCL -->
-  <p class="text-xs text-slate-400 max-w-xs pt-6 opacity-0 translate-y-8 animate-fade-in-up delay-[850ms]">
+  <p class="text-xs text-slate-400 max-w-xs pt-6 hero-visible">
     Только 18+ • Играйте ответственно • Применяются правила и условия
   </p>
 
@@ -414,17 +414,14 @@
 
 <!-- ───────────────────── АНИМАЦИИ И ФОНЫ ───────────────────── -->
 <style>
-@keyframes fadeInUp{0%{opacity:0;transform:translateY(32px);}100%{opacity:1;transform:translateY(0);}}
-.animate-fade-in-up{animation:fadeInUp .8s forwards ease-out;}
 
-@keyframes gradientShift{0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
-.bg-animated{background:linear-gradient(130deg,#0f172a 0%,#1e3a8a 35%,#3b0764 75%,#0f172a 100%);background-size:240% 240%;animation:gradientShift 25s ease-in-out infinite;}
+.bg-animated{background:linear-gradient(130deg,#0f172a 0%,#1e3a8a 35%,#3b0764 75%,#0f172a 100%);background-size:240% 240%}
 .bg-gradient-radial-1{background:radial-gradient(circle at center,rgba(56,189,248,.5) 0%,rgba(56,189,248,0) 70%);}
 .bg-gradient-radial-2{background:radial-gradient(circle at center,rgba(147,51,234,.5) 0%,rgba(147,51,234,0) 70%);}
 .bg-grid{background-image:repeating-linear-gradient(0deg,transparent 0px,transparent 23px,rgba(255,255,255,.04) 23px,rgba(255,255,255,.04) 24px),repeating-linear-gradient(90deg,transparent 0px,transparent 23px,rgba(255,255,255,.04) 23px,rgba(255,255,255,.04) 24px);}
 .bg-noise{background-image:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMiIgaGVpZ2h0PSIyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9IiNmZmYiIC8+PHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=");}
 .hero-visible{opacity:1;transform:none;}
-@media (prefers-reduced-motion:no-preference){.hero-animate{opacity:0;transform:translateY(32px);animation:fadeInUp .8s forwards ease-out;animation-delay:var(--delay,0s);}}
+.hero-animate{opacity:1;transform:none;}
 </style>
 
 <script>
